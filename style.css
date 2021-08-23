@@ -1,0 +1,158 @@
+
+.text-color{
+   color:rgb(126, 126, 126)
+}
+.highlight-color{
+   color:rgb(85, 84, 84)
+}
+.price{
+   color: orangered;
+}
+.add-cart{
+   background-color: rgb(243, 61, 6);
+   text-decoration: none;
+}
+.background{
+   background-color: #e7e0e0;
+}
+.form-style{
+   width: 700px;
+   background-color: #F0F0F0;
+}
+.button-style{
+   color: rgb(76, 76, 82);
+}
+.button-syle:hover {
+   color: rgb(32, 32, 197);
+ }
+
+.link-style{
+   color: rgb(76, 76, 82);
+   text-decoration: none;
+   font-size: 20px;
+} 
+
+.ul-style{
+   list-style-type: none;
+
+}
+.li-style{
+   text-decoration: none;
+   color: #5a5757;
+}
+.ending{
+   padding: 100px;
+}
+.feature-image{
+   width: 495px;
+}
+.cart-design{
+   width:16%;
+
+}
+.flash-header{
+   background-image: url("image/background-1.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   height:110px;
+  
+}
+.phone-image{
+   transform: translate(30%, -25%);
+   width: 10%;
+   height: 140px;
+}
+.flash{
+   font-size: 400%;
+   
+}
+.view-button{
+  height:8px;
+  width: 100px;
+   padding-bottom: 2.2%;
+   margin-top: 2.5%;
+   color:rgb(109, 107, 107);
+   transform:translateX(-50%);
+}
+.headphone-image{
+   width:100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 688px) 
+{
+   nav{
+      display: table-row;
+  }
+
+  header{
+      margin: 10px;
+  }
+
+  .nav-image{
+      padding-left:20px ;
+  }
+  .nav-style{
+      display: table-row;
+  }
+  .form-style{
+      margin-top: 20px;
+      width: 300px;
+  }
+
+  .button-style{
+      margin-top: 20px;
+  }
+  .login-cart{
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center;
+  }
+  .link-style{
+      padding-left: 0px ;
+  }
+
+  .feature-image{
+      padding: 10px;
+      width: 100%;
+  }
+   .flash-header{
+      background-image: url("image/background-1.jpg");
+      background-repeat: no-repeat;
+      height:70px;
+     
+   }
+   .flash{
+      font-size: 190%;
+transform:translate(-10%, 15%);
+   }
+   .view-button{
+       height:27px;
+       width: 18%;
+       padding-bottom: 2.2%;
+       margin-top: 5%;
+       color:rgb(109, 107, 107);
+       font-size: 50%;
+       transform:translate(-35%, 10%);
+    }
+    .phone-image{
+      transform: translate(1%, -20%);
+      width: 100px;
+      height: 80px;
+   }
+   
+    .ma{
+       width:30%;
+    }
+    .cart-design{
+      width:90%;
+   margin-left:auto;
+   margin-right:auto;
+   }
+   .headphone-image{
+      width: 50%;
+      height: 180px;
+      margin-left:80px;
+      margin-right:80px;
+   }
+  
+}
