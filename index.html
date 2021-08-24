@@ -15,7 +15,7 @@
 
 
 
-<body class="background container">
+<body class="background">
 
     <header class="bg-white my-2 ">
 
@@ -23,7 +23,7 @@
             <div class="row shadow d-flex justify-content-evenly align-items-center py-3 nav-style">
 
                 <div class="col-md-3">
-                    <img class="nav-image" style="width: 200px;" src="image/logo.png" alt="">
+                    <img class="nav-image" style="width: 200px; margin-left: 20px;" src="image/logo.png" alt="">
                 </div>
 
                 <div class=" col-md-6 d-flex justify-content-center align-items-center">
@@ -55,26 +55,44 @@
     <!-- First Section with sidebar -->
 
 
-    <main>
+    <main class="container">
         <section class=" justify-between m-4">
 
             <div class="row  mx-3 ">
-                <div class="col-md-3 col-sm-9 rounded bg-white">
+                <div class="col-md-3 col-sm-9 rounded bg-white " id="side-bar">
                     <ul class="ul-style ">
-                        <li class="p-2 border-bottom"><a class="li-style " href=""><span class="">FEATURE
+                        <li class="p-3 border-bottom title-1"><a class="li-style " href=""><span class="">FEATURE
                                     CATEGORIES</span></a></li>
-                        <li class="p-2 border-bottom"><a class="li-style" href=""><img src="image/Firstrays Express - 512.png" alt=""><span class="list-size"> Firstrays Express</span></a></li>
-                        <li class="p-2 border-bottom"><a class="li-style" href=""><img src="image/Computer & Electronics - 512.png" alt=""> <span class="list-size">Computer &
+                        <i class=" more fas fa-chevron-circle-down text-primary" id="show-more"
+                            style="font-size: 30px; margin-left:100px; margin-top:3px;"></i>
+                        <li class="p-2 border-bottom"><a class="li-style" href=""><img
+                                    src="image/Firstrays Express - 512.png" alt=""><span class="list-size"> Firstrays
+                                    Express</span></a></li>
+                        <li class="p-2 border-bottom"><a class="li-style" href=""><img
+                                    src="image/Computer & Electronics - 512.png" alt=""> <span
+                                    class="list-size">Computer &
                                     Electronics</span></a></li>
-                        <li class=" p-2 pt-3 list-size"><a class="li-style" href=""> <img src="image/Mobile & Accessories - 512.png" alt=""> Mobile & Accessorries</a></li>
-                        <li class=" p-2 list-size"><a class="li-style" href=""><img src="image/Home Appliances - 512.png" alt=""> Home Appliances</a></li>
-                        <li class=" p-2 list-size"><a class="li-style" href=""><img src="image/Monthly Grocery - 512.png" alt=""> Monthly Grocery</a></li>
-                        <li class=" p-2 list-size"><a class="li-style" href=""><img src="image/Fashion & Accessories - 512.png" alt=""> FIRSTRAYS EXPRESS</a></li>
-                        <li class=" p-2 list-size"><a class="li-style" href=""><img src="image/Furnitures - 512.png" alt=""> Home & Living</a></li>
-                        <li class=" p-2 list-size"><a class="li-style" href=""><img src="image/Bikes, Bicycles and Cars - 512.png" alt=""> Bikes, Bicycles and Cars</a></li>
-                        <li class=" p-2 list-size"><a class="li-style" href=""><img src="image/Books & Stationery - 512 (1).png" alt=""> Books & Stationery</a></li>
-                        <li class=" p-2 pb-4 list-size"><a class="li-style" href=""><img src="image/Kids Zone - 512 (1).png" alt=""> Kids Zone</a></li>
-                        <li class="p-2 border-top"><a class="li-style" href=""> <span class=""><img src="image/More 512 1.png" alt=""> More Categories</span> </a></li>
+
+                        <li class=" p-2 pt-3 list-size"><a class="li-style" href=""> <img
+                                    src="image/Mobile & Accessories - 512.png" alt=""> Mobile & Accessorries</a></li>
+                        <li class=" p-2 list-size"><a class="li-style" href=""><img
+                                    src="image/Home Appliances - 512.png" alt=""> Home Appliances</a></li>
+                        <li class=" p-2 list-size"><a class="li-style" href=""><img
+                                    src="image/Monthly Grocery - 512.png" alt=""> Monthly Grocery</a></li>
+                        <li class=" p-2 list-size"><a class="li-style" href=""><img
+                                    src="image/Fashion & Accessories - 512.png" alt=""> FIRSTRAYS EXPRESS</a></li>
+                        <li class=" p-2 list-size"><a class="li-style" href=""><img src="image/Furnitures - 512.png"
+                                    alt=""> Home & Living</a></li>
+                        <li class=" p-2 list-size"><a class="li-style" href=""><img
+                                    src="image/Bikes, Bicycles and Cars - 512.png" alt=""> Bikes, Bicycles and Cars</a>
+                        </li>
+                        <li class=" p-2 list-size"><a class="li-style" href=""><img
+                                    src="image/Books & Stationery - 512 (1).png" alt=""> Books & Stationery</a></li>
+                        <li class=" p-2 pb-4 list-size"><a class="li-style" href=""><img
+                                    src="image/Kids Zone - 512 (1).png" alt=""> Kids Zone</a></li>
+                        <li class="p-2 border-top"><a class="li-style" href=""> <span class=""><img
+                                        src="image/More 512 1.png" alt=""> More Categories</span> </a></li>
+
                     </ul>
                 </div>
 
@@ -87,7 +105,7 @@
                         </div>
 
                         <div class="col mx-3 rounded bg-white text-center ending">
-                            <h4 class="text-2xl">Ending Soon + Lost Visited Products</h4>
+                            <h4 class="ending-font">Ending Soon + Lost Visited Products</h4>
                         </div>
                     </div>
                 </div>
@@ -105,63 +123,93 @@
 
         <!-- Second Section -->
 
-        <section class=" row mt-5 ">
+        <section class="m-4">
 
-            <div class="col-md-1"></div>
-            <div class="col-md-2 ">
-                <h5 class="rounded-pill shadow bg-white text-center p-2 highlight-color">Hot Deal</h5>
+            <div class="row d-flex align-items-center ">
+
+                <div class="col border border-2 rounded-pill bg-white d-flex p-1 mx-4  quick">
+                    <div class="deal d-flex ">
+                        <i class="fas fa-circle first"></i>
+                        <p class="m-0 px-2 title">Hot Deal </p>
+                    </div>
+
+                </div>
+                <div class="col border border-2 rounded-pill bg-white d-flex p-1 mx-4  quick">
+                    <div class="deal d-flex ">
+                        <i class="fas fa-circle second"></i>
+                        <p class="m-0 px-2 title">Popular </p>
+                    </div>
+
+                </div>
+                <div class="col border border-2 rounded-pill bg-white d-flex p-1 mx-4  quick">
+                    <i class="fas fa-circle third"></i>
+                    <p class="m-0 px-2 title"> Offers </p>
+
+                </div>
+                <div class="col  border border-2 rounded-pill bg-white d-flex p-1 mx-4  quick">
+                    <i class="fas fa-circle fourth"></i>
+                    <p class="m-0 px-2 title">Campaigns </p>
+
+                </div>
+                <div class="col border border-2 rounded-pill bg-white d-flex p-1 mx-4 quick">
+
+
+                    <i class="fas fa-circle fifth "></i>
+                    <p class="m-0 px-2 title">E-Sheba </p>
+
+
+
+                </div>
+
             </div>
-            <div class="col-md-2">
-                <h5 class="rounded-pill shadow bg-white text-center p-2 highlight-color">Popular</h5>
-            </div>
-            <div class="col-md-2">
-                <h5 class="rounded-pill shadow bg-white text-center p-2 highlight-color">Offers</h5>
-            </div>
-            <div class="col-md-2">
-                <h5 class="rounded-pill shadow bg-white text-center p-2 highlight-color">Campaigns</h5>
-            </div>
-            <div class="col-md-2">
-                <h5 class="rounded-pill shadow bg-white text-center p-2 highlight-color">E-Sheba</h5>
-            </div>
-            <div class="col-md-1"></div>
         </section>
+
         <!-- Second Section end -->
 
+        <!-- Service section starts -->
 
-        <!-- Service section -->
+        <section class="m-5">
 
-        <section class=" row  mt-5 mb-4">
+            <div class="row ">
 
-            <div class="col-md-1"></div>
+                <div class="col bg-white d-flex flex-column service-desc p-4 m-1 rounded-start">
 
-            <div class="col-md-2 bg-white mt-2">
-                <h5 class="text-primary text-center m-2">Best Value</h5>
-                <p class="bg-white text-center text-color">Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit!</p>
-            </div>
-            <div class="col-md-2  bg-white ml-5 border-start mt-2">
-                <h5 class="text-primary text-center m-2">Authentic Product</h5>
-                <p class="bg-white text-center text-color">Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit!</p>
+                    <img style="transform: translateY(20%);" src="image/display-1.png" alt="">
+                    <h5 class="mb-2 service-title mt-4">Best Value</h5>
+                    <p class="services mb-0">We offer competitive prices on our 100 million plus product range.
+                    </p>
+                </div>
 
+                <div class="col bg-white d-flex flex-column service-desc p-4 m-1">
+                    <img src="image/display-2.png" alt="">
+                    <h5 class="mb-2 service-title">Authentic Product</h5>
+                    <p class="services mb-0">Officially Sourced Products from verified vendors & Brands.</p>
+                </div>
+                <div class="col bg-white d-flex flex-column service-desc p-4 m-1">
+                    <div class="safe text-center">
+                        <img style="transform: translateY(30%);" src="image/display-3.png" alt="">
+                        <h5 class="mb-2 service-title mt-4">Safe Payment</h5>
+                        <p class="services mb-0">Pay with the most popular and secure payment methods.</p>
+                    </div>
+                </div>
+                <div class="col bg-white d-flex flex-column service-desc p-4 m-1">
+                    <div class="safe text-center">
+                        <img style="transform: translateY(30%);" src="image/display-4.png" alt="">
+                        <h5 class="mb-2 service-title mt-4">Fast Delivery</h5>
+                        <p class="services mb-0">Get Delivery of your ordered Products within guarranteed Timeline.</p>
+                    </div>
+                </div>
+                <div class="col bg-white d-flex flex-column service-desc p-4 m-1 rounded-end">
+                    <img style="transform: translateY(20%);" src="image/display-5.png" alt="">
+                    <h5 class="mb-2 service-title mt-3">Customer Support</h5>
+                    <p class="services mb-0">Dadicated Customer support to ensure best experience.</p>
+                </div>
             </div>
-            <div class="col-md-2 bg-white border-start mt-2">
-                <h5 class="text-primary text-center m-2">Safe Payment</h5>
-                <p class="bg-white text-center text-color">Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit!</p>
             </div>
-            <div class="col-md-2 bg-white border-start mt-2">
-                <h5 class="text-primary text-center m-2 mt-2">Fast Delivery</h5>
-                <p class="bg-white text-center text-color">Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit!</p>
-            </div>
-            <div class="col-md-2 bg-white border-start mt-2">
-                <h5 class="text-primary text-center m-2">Customer Support</h5>
-                <p class="bg-white text-center text-color">Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit!</p>
-            </div>
-            <div class="col-md-1"></div>
+
         </section>
+
+
         <!-- service section end -->
 
 
@@ -181,119 +229,119 @@
 
         <!-- Flash Sale cart -->
         <section class=" mt-5 mb-5 row d-flex justify-content-between">
-           
-                    <div class="col-md-2 shadow rounded bg-white cart-design">
 
-                        <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-                        <p class="bg-white mt-2">Lorem ipsum, dolor sit amet consectetur it.</p>
-                        <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                                class="rounded text-white bg-primary">-33%</span>
-                        </p>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-                        <div class="d-flex justify-content-between mb-3">
-                            <div>
-                                <h5 class="price  font-bold price-size">$2000 </h5>
-                            </div>
-                            <a href="#" class="add-cart text-white text-center p-1 rounded">
-                                <span class="cart-button">ADD TO CART</span>
-                            </a>
-                        </div>
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-2">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
+
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                
-                <div class="col-md-2 shadow rounded bg-white cart-design">
+                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
+                </div>
+            </div>
 
-                    <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-                    <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-                    <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                            class="rounded text-white bg-primary">-33%</span>
-                    </p>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-                    <div class="d-flex justify-content-between mb-3">
-                        <div>
-                            <h5 class="price  font-bold price-size">$2000 </h5>
-                        </div>
-                       
-                            <a href="#" class="add-cart text-white text-center p-1 rounded">
-                                <span class="cart-button">ADD TO CART</span>
-                            </a>
-                        
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
+
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
+
+                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
 
                 </div>
-                <div class="col-md-2 shadow rounded bg-white cart-design">
 
-                    <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-                    <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-                    <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                            class="rounded text-white bg-primary">-33%</span>
-                    </p>
+            </div>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-                    <div class="d-flex justify-content-between mb-3">
-                        <div>
-                            <h5 class="price  font-bold price-size">$2000 </h5>
-                        </div>
-                        <a href="#" class="add-cart text-white text-center p-1 rounded">
-                            <span class="cart-button">ADD TO CART</span>
-                        </a>
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
+
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-
+                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
                 </div>
-                <div class="col-md-2 shadow rounded bg-white cart-design">
 
-                    <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-                    <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-                    <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                            class="rounded text-white bg-primary">-33%</span>
-                    </p>
+            </div>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-                    <div class="d-flex justify-content-between mb-3">
-                        <div>
-                            <h5 class="price  font-bold price-size">$2000 </h5>
-                        </div>
-                        <a href="#" class="add-cart text-white text-center p-1 rounded">
-                            <span class="cart-button">ADD TO CART</span>
-                        </a>
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
+
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-
+                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
                 </div>
-                <div class="col-md-2 shadow rounded bg-white cart-design">
 
-                    <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-                    <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-                    <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                            class="rounded text-white bg-primary">-33%</span>
-                    </p>
+            </div>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-                    <div class="d-flex justify-content-between mb-3">
-                        <div>
-                            <h5 class="price  font-bold price-size">$2000 </h5>
-                        </div>
-                        <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
-                            <span class="cart-button">ADD TO CART</span>
-                        </a>
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
+
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-
+                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
                 </div>
-                <div class="col-md-2 shadow rounded bg-white cart-design">
 
-                    <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-                    <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-                    <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                            class="rounded text-white bg-primary">-33%</span>
-                    </p>
+            </div>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-                    <div class="d-flex justify-content-between mb-3">
-                        <div>
-                            <h5 class="price  font-bold price-size">$2000 </h5>
-                        </div>
-                        <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
-                            <span class="cart-button">ADD TO CART</span>
-                        </a>
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
+
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
+                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
                 </div>
             </div>
             </div>
-           
+            </div>
+
         </section>
         <!-- Flash Sale cart end -->
         <!-- Flash Sale section end -->
@@ -306,7 +354,7 @@
             <div class="  life-header ">
                 <div class="d-flex rounded justify-content-between col-md-12 row">
                     <img class="phone-image col-3 col-md-3 " src="image/watch.png" alt="">
-                    <h1 class="fw-bolder text-light flash mt-3 col-6 col-md-6 text-center">LIFE STYLE</h1>
+                    <h1 class="fw-bolder text-light life mt-3 col-6 col-md-6 text-center">LIFE STYLE</h1>
                     <a class="btn btn-light view-button shadow col-3 col-md-3" href="#"><b>VIEW ALL</b></a>
                 </div>
             </div>
@@ -316,7 +364,7 @@
 
         <!-- Life Style body -->
         <section class=" mt-5 mb-5 row d-flex justify-content-between">
-           
+
             <div class="col-md-2 shadow rounded bg-white cart-design">
 
                 <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
@@ -334,102 +382,102 @@
                     </a>
                 </div>
             </div>
-        
-        <div class="col-md-2 shadow rounded bg-white cart-design">
 
-            <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-            <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-            <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                    class="rounded text-white bg-primary">-33%</span>
-            </p>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-            <div class="d-flex justify-content-between mb-3">
-                <div>
-                    <h5 class="price  font-bold price-size">$2000 </h5>
-                </div>
-               
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
+
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+
                     <a href="#" class="add-cart text-white text-center p-1 rounded">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
-                
-            </div>
 
-        </div>
-        <div class="col-md-2 shadow rounded bg-white cart-design">
-
-            <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-            <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-            <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                    class="rounded text-white bg-primary">-33%</span>
-            </p>
-
-            <div class="d-flex justify-content-between mb-3">
-                <div>
-                    <h5 class="price  font-bold price-size">$2000 </h5>
                 </div>
-                <a href="#" class="add-cart text-white text-center p-1 rounded">
-                    <span class="cart-button">ADD TO CART</span>
-                </a>
+
             </div>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-        </div>
-        <div class="col-md-2 shadow rounded bg-white cart-design">
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
 
-            <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-            <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-            <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                    class="rounded text-white bg-primary">-33%</span>
-            </p>
-
-            <div class="d-flex justify-content-between mb-3">
-                <div>
-                    <h5 class="price  font-bold price-size">$2000 </h5>
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
                 </div>
-                <a href="#" class="add-cart text-white text-center p-1 rounded">
-                    <span class="cart-button">ADD TO CART</span>
-                </a>
+
             </div>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-        </div>
-        <div class="col-md-2 shadow rounded bg-white cart-design">
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
 
-            <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-            <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-            <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                    class="rounded text-white bg-primary">-33%</span>
-            </p>
-
-            <div class="d-flex justify-content-between mb-3">
-                <div>
-                    <h5 class="price  font-bold price-size">$2000 </h5>
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
                 </div>
-                <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
-                    <span class="cart-button">ADD TO CART</span>
-                </a>
+
             </div>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-        </div>
-        <div class="col-md-2 shadow rounded bg-white cart-design">
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
 
-            <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-            <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-            <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                    class="rounded text-white bg-primary">-33%</span>
-            </p>
-
-            <div class="d-flex justify-content-between mb-3">
-                <div>
-                    <h5 class="price  font-bold price-size">$2000 </h5>
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
                 </div>
-                <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
-                    <span class="cart-button">ADD TO CART</span>
-                </a>
+
             </div>
-        </div>
-    </div>
-    </div>
-   
-</section>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
+
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
+
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
+                </div>
+            </div>
+            </div>
+            </div>
+
+        </section>
         <!-- Life Style body -->
         <!-- Life Style section end -->
 
@@ -440,7 +488,7 @@
             <div class="  appliance-header ">
                 <div class="d-flex rounded justify-content-between col-md-12 row">
                     <img class="appliance-image col-3 col-md-3 " src="image/home-appliances.png" alt="">
-                    <h1 class="fw-bolder text-light flash mt-3 col-6 col-md-6 text-center">APPLIANCES</h1>
+                    <h1 class="fw-bolder text-light appliance mt-3 col-6 col-md-6 text-center">APPLIANCES</h1>
                     <a class="btn btn-light view-button shadow col-3 col-md-3" href="#"><b>VIEW ALL</b></a>
                 </div>
             </div>
@@ -449,7 +497,7 @@
 
         <!-- Appliance body -->
         <section class=" mt-5 mb-5 row d-flex justify-content-between">
-           
+
             <div class="col-md-2 shadow rounded bg-white cart-design">
 
                 <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
@@ -467,102 +515,102 @@
                     </a>
                 </div>
             </div>
-        
-        <div class="col-md-2 shadow rounded bg-white cart-design">
 
-            <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-            <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-            <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                    class="rounded text-white bg-primary">-33%</span>
-            </p>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-            <div class="d-flex justify-content-between mb-3">
-                <div>
-                    <h5 class="price  font-bold price-size">$2000 </h5>
-                </div>
-               
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
+
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+
                     <a href="#" class="add-cart text-white text-center p-1 rounded">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
-                
-            </div>
 
-        </div>
-        <div class="col-md-2 shadow rounded bg-white cart-design">
-
-            <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-            <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-            <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                    class="rounded text-white bg-primary">-33%</span>
-            </p>
-
-            <div class="d-flex justify-content-between mb-3">
-                <div>
-                    <h5 class="price  font-bold price-size">$2000 </h5>
                 </div>
-                <a href="#" class="add-cart text-white text-center p-1 rounded">
-                    <span class="cart-button">ADD TO CART</span>
-                </a>
+
             </div>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-        </div>
-        <div class="col-md-2 shadow rounded bg-white cart-design">
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
 
-            <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-            <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-            <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                    class="rounded text-white bg-primary">-33%</span>
-            </p>
-
-            <div class="d-flex justify-content-between mb-3">
-                <div>
-                    <h5 class="price  font-bold price-size">$2000 </h5>
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
                 </div>
-                <a href="#" class="add-cart text-white text-center p-1 rounded">
-                    <span class="cart-button">ADD TO CART</span>
-                </a>
+
             </div>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-        </div>
-        <div class="col-md-2 shadow rounded bg-white cart-design">
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
 
-            <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-            <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-            <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                    class="rounded text-white bg-primary">-33%</span>
-            </p>
-
-            <div class="d-flex justify-content-between mb-3">
-                <div>
-                    <h5 class="price  font-bold price-size">$2000 </h5>
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
                 </div>
-                <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
-                    <span class="cart-button">ADD TO CART</span>
-                </a>
+
             </div>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-        </div>
-        <div class="col-md-2 shadow rounded bg-white cart-design">
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
 
-            <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-            <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-            <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                    class="rounded text-white bg-primary">-33%</span>
-            </p>
-
-            <div class="d-flex justify-content-between mb-3">
-                <div>
-                    <h5 class="price  font-bold price-size">$2000 </h5>
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
                 </div>
-                <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
-                    <span class="cart-button">ADD TO CART</span>
-                </a>
+
             </div>
-        </div>
-    </div>
-    </div>
-   
-</section>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
+
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
+
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
+                </div>
+            </div>
+            </div>
+            </div>
+
+        </section>
         <!-- Appliance body end -->
         <!-- Appliance section end -->
 
@@ -574,7 +622,7 @@
             <div class="  accessories-header rounded ">
                 <div class="d-flex rounded justify-content-between col-md-12 row">
                     <div class="appliance-image col-2 col-md-2 "></div>
-                    <h1 class="fw-bolder text-light flash mt-3 col-7 col-md-7">ACCESORRIES</h1>
+                    <h1 class="fw-bolder text-light accessories mt-3 col-7 col-md-7">ACCESORRIES</h1>
                     <a class="btn btn-light view-button shadow col-3 col-md-3" href="#"><b>VIEW ALL</b></a>
                 </div>
             </div>
@@ -584,7 +632,7 @@
 
         <!-- Accesorries body -->
         <section class=" mt-5 mb-5 row d-flex justify-content-between">
-           
+
             <div class="col-md-2 shadow rounded bg-white cart-design">
 
                 <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
@@ -602,106 +650,120 @@
                     </a>
                 </div>
             </div>
-        
-        <div class="col-md-2 shadow rounded bg-white cart-design">
 
-            <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-            <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-            <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                    class="rounded text-white bg-primary">-33%</span>
-            </p>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-            <div class="d-flex justify-content-between mb-3">
-                <div>
-                    <h5 class="price  font-bold price-size">$2000 </h5>
-                </div>
-               
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
+
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+
                     <a href="#" class="add-cart text-white text-center p-1 rounded">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
-                
-            </div>
 
-        </div>
-        <div class="col-md-2 shadow rounded bg-white cart-design">
-
-            <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-            <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-            <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                    class="rounded text-white bg-primary">-33%</span>
-            </p>
-
-            <div class="d-flex justify-content-between mb-3">
-                <div>
-                    <h5 class="price  font-bold price-size">$2000 </h5>
                 </div>
-                <a href="#" class="add-cart text-white text-center p-1 rounded">
-                    <span class="cart-button">ADD TO CART</span>
-                </a>
+
             </div>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-        </div>
-        <div class="col-md-2 shadow rounded bg-white cart-design">
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
 
-            <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-            <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-            <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                    class="rounded text-white bg-primary">-33%</span>
-            </p>
-
-            <div class="d-flex justify-content-between mb-3">
-                <div>
-                    <h5 class="price  font-bold price-size">$2000 </h5>
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
                 </div>
-                <a href="#" class="add-cart text-white text-center p-1 rounded">
-                    <span class="cart-button">ADD TO CART</span>
-                </a>
+
             </div>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-        </div>
-        <div class="col-md-2 shadow rounded bg-white cart-design">
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
 
-            <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-            <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-            <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                    class="rounded text-white bg-primary">-33%</span>
-            </p>
-
-            <div class="d-flex justify-content-between mb-3">
-                <div>
-                    <h5 class="price  font-bold price-size">$2000 </h5>
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
                 </div>
-                <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
-                    <span class="cart-button">ADD TO CART</span>
-                </a>
+
             </div>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
 
-        </div>
-        <div class="col-md-2 shadow rounded bg-white cart-design">
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
 
-            <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-            <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-            <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                    class="rounded text-white bg-primary">-33%</span>
-            </p>
-
-            <div class="d-flex justify-content-between mb-3">
-                <div>
-                    <h5 class="price  font-bold price-size">$2000 </h5>
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
                 </div>
-                <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
-                    <span class="cart-button">ADD TO CART</span>
-                </a>
+
             </div>
-        </div>
-    </div>
-    </div>
-   
-</section>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
+
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
+
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
+                </div>
+            </div>
+            </div>
+            </div>
+
+        </section>
         <!-- Accesorries body end -->
         <!-- Accesorries Section end-->
 
-    </Main>
+    </main>
 </body>
+
+<script>
+    document.getElementById('show-more').addEventListener('click', function () {
+        document.getElementById('side-bar').style.height = '100%';
+        document.getElementById('show-more').style.display = 'none';
+    })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 
 </html>
