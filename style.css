@@ -263,6 +263,9 @@ body {
       margin-top: 20px;
       width: 300px;
    }
+   .form-control{
+      margin-left:30px;
+   }
    .button-style {
       margin-top: 20px;
    }
@@ -281,8 +284,8 @@ body {
       height: 200px;
    }
    .ending {
-      width: 100%;
-      height: 50px;
+      width: 90%;
+      height: 40px;
    }
    .ending-font {
       font-size: 17px;
@@ -294,23 +297,23 @@ body {
       height: 70px;
    }
    .flash {
-      font-size: 170%;
-      transform: translate(-10%, 15%);
+      font-size: 150%;
+      transform: translate(-40%, 15%);
    }
    .life {
-      font-size: 200%;
-      transform: translate(-10%, 5%);
+      font-size: 150%;
+      transform: translate(-20%, 5%);
    }
    .appliance {
-      font-size: 200%;
-      transform: translate(-10%, 5%);
+      font-size: 150%;
+      transform: translate(-20%, 5%);
    }
    .accessories {
-      font-size: 200%;
+      font-size: 150%;
       transform: translate(-20%, 5%);
    }
    .accessories-header {
-      height: 85px;
+      height: 75px;
    }
    .life-header {
       background-image: url("image/background-2.png");
@@ -335,7 +338,7 @@ body {
       color: rgb(109, 107, 107);
       transform: translate(-35%, 10%);
       font-family: 'Roboto', sans-serif;
-      font-size: 52%;
+      font-size: 48%;
    }
    .phone-image {
       transform: translate(1%, -20%);
@@ -347,23 +350,24 @@ body {
       margin-left: auto;
       margin-right: auto;
       margin-top: 20px;
+      font-size: 16px;
    }
    .headphone-image {
       width: 100%;
       height: 150px;
    }
    .cart-button {
-      font-size: 60%;
+      font-size: 50%;
    }
    .price-size {
-      font-size: 18px;
+      font-size: 16px;
       margin-top: 6px;
    }
    .deal {
       width: 200px;
    }
    .safe {
-      width: 200px;
+      width: 190px;
    }
    #side-bar {
       height: 97px;
