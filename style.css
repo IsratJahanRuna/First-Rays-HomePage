@@ -284,8 +284,8 @@ body {
       height: 200px;
    }
    .ending {
-      width: 110%;
-      height: 70px;
+      width: 90%;
+      height: 50px;
    }
    .ending-font {
       font-size: 20px;
@@ -338,7 +338,7 @@ body {
       color: rgb(109, 107, 107);
       transform: translate(-35%, 10%);
       font-family: 'Roboto', sans-serif;
-      font-size: 15%;
+      font-size:20px;
    }
    .phone-image {
       transform: translate(1%, -20%);
@@ -378,11 +378,11 @@ body {
    }
   
    .title-1{
-      font-size: 15px;
+      font-size: 10px;
    }
    #show-more{
       font-size: 15px;
-       margin-left:50px;
+      
       
    }
   
