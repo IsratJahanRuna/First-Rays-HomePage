@@ -284,8 +284,8 @@ body {
       height: 200px;
    }
    .ending {
-      width: 80%;
-      height: 30px;
+      width: 180px;
+      height: 20px;
    }
    .ending-font {
       font-size: 17px;
@@ -339,7 +339,7 @@ body {
       color: rgb(109, 107, 107);
       transform: translate(-35%, 10%);
       font-family: 'Roboto', sans-serif;
-      font-size: 35%;
+      font-size: 25%;
    }
    .phone-image {
       transform: translate(1%, -20%);
@@ -368,7 +368,7 @@ body {
       width: 200px;
    }
    .safe {
-      width: 180px;
+      width: 150px;
    }
    #side-bar {
       height: 105px;
@@ -377,8 +377,12 @@ body {
    .more {
       display: block;
    }
+   .ending-font {
+      font-size: 10px;
+      margin-top: -55px;
+   }
    .title-1{
-      font-size: 15px;
+      font-size: 10px;
    }
   
 }
