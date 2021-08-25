@@ -284,13 +284,13 @@ body {
       height: 200px;
    }
    .ending {
-      width: 180px;
-      height: 20px;
+      width: 150px;
+      height: 10px;
    }
    .ending-font {
-      font-size: 17px;
-      margin-top: -60px;
-      transform: translateY(-20%);
+      font-size: 20px;
+      margin-top: -50px;
+      transform: translateY(-30%);
    }
    .flash-header {
       background-image: url("image/background-1.png");
@@ -299,7 +299,7 @@ body {
    }
    .flash {
       font-size: 150%;
-      transform: translate(-50%, 15%);
+      transform: translate(-50%, 10%);
    }
    .life {
       font-size: 150%;
@@ -339,7 +339,7 @@ body {
       color: rgb(109, 107, 107);
       transform: translate(-35%, 10%);
       font-family: 'Roboto', sans-serif;
-      font-size: 25%;
+      font-size: 15%;
    }
    .phone-image {
       transform: translate(1%, -20%);
