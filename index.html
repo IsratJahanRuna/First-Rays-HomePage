@@ -15,7 +15,7 @@
 
 
 
-<body class="background">
+<body class="background" onload="reload()">
 
     <header class="bg-white my-2 ">
 
@@ -55,7 +55,7 @@
     <!-- First Section with sidebar -->
 
 
-    <main class="container">
+    <main class="mx-5">
         <section class=" justify-between m-4">
 
             <div class="row  mx-3 ">
@@ -105,7 +105,7 @@
                         </div>
 
                         <div class="col mx-3 rounded bg-white text-center ending">
-                            <h4 class="ending-font">Ending Soon + Lost Visited Products</h4>
+                            <h4 class="ending-font" id="promo">Ending Soon + Lost Visited Products</h4>
                         </div>
                     </div>
                 </div>
@@ -233,7 +233,7 @@
             <div class="col-md-2 shadow rounded bg-white cart-design">
 
                 <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-                <p class="bg-white mt-2">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
                 <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
                         class="rounded text-white bg-primary">-33%</span>
                 </p>
@@ -243,7 +243,7 @@
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
                     <a href="#" class="add-cart text-white text-center p-1 rounded">
-                        <span class="cart-button">ADD TO CART</span>
+                        <span class="cart-button" id="add">ADD TO CART</span>
                     </a>
                 </div>
             </div>
@@ -368,7 +368,7 @@
             <div class="col-md-2 shadow rounded bg-white cart-design">
 
                 <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-                <p class="bg-white mt-2">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
                 <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
                         class="rounded text-white bg-primary">-33%</span>
                 </p>
@@ -378,7 +378,7 @@
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
                     <a href="#" class="add-cart text-white text-center p-1 rounded">
-                        <span class="cart-button">ADD TO CART</span>
+                        <span class="cart-button ">ADD TO CART</span>
                     </a>
                 </div>
             </div>
@@ -500,7 +500,7 @@
 
             <div class="col-md-2 shadow rounded bg-white cart-design">
 
-                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <img class="headphone-image mt-3 border background rounded" src="image/headphone.png" alt="">
                 <p class="bg-white mt-2">Lorem ipsum, dolor sit amet consectetur it.</p>
                 <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
                         class="rounded text-white bg-primary">-33%</span>
@@ -636,7 +636,7 @@
             <div class="col-md-2 shadow rounded bg-white cart-design">
 
                 <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-                <p class="bg-white mt-2">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
                 <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
                         class="rounded text-white bg-primary">-33%</span>
                 </p>
@@ -750,6 +750,10 @@
         <!-- Accesorries Section end-->
 
     </main>
+
+    <footer class="bg-white" style="padding:100px;">
+
+    </footer>
 </body>
 
 <script>
@@ -757,6 +761,27 @@
         document.getElementById('side-bar').style.height = '100%';
         document.getElementById('show-more').style.display = 'none';
     })
+
+
+    document.getElementById('add').addEventListener('click', function () {
+        alert("Do you want to add this product to your cart?");
+    })
+
+
+    function reload() {
+        alert("Page is loaded");
+    }
+
+    document.getElementById("promo").onmouseenter = function () { mouseEnter() };
+    document.getElementById("promo").onmouseleave = function () { mouseLeave() };
+
+    function mouseEnter() {
+        document.getElementById("promo").style.color = "lightBlue";
+    }
+
+    function mouseLeave() {
+        document.getElementById("promo").style.color = "black";
+    }
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
