@@ -286,12 +286,12 @@ body {
    .ending {
       width: 50%;
       height: 50px;
-      transform: translateX(-20%);
+      transform: translateX(-5%);
    }
    .ending-font {
       font-size: 20px;
       margin-top: -65px;
-      transform: translateX(-30%);
+      transform: translateX(-50%);
    }
    .flash-header {
       background-image: url("image/background-1.png");
@@ -384,6 +384,7 @@ body {
    }
    #show-more{
       font-size: 13px;
+      margin-left:10px;
       
       
    }
