@@ -284,13 +284,12 @@ body {
       height: 200px;
    }
    .ending {
-      width: 150px;
-      height: 10px;
+      width: 110%;
+      height: 70px;
    }
    .ending-font {
       font-size: 20px;
-      margin-top: -50px;
-      transform: translateY(-30%);
+      margin-top: -65px;
    }
    .flash-header {
       background-image: url("image/background-1.png");
@@ -371,18 +370,20 @@ body {
       width: 150px;
    }
    #side-bar {
-      height: 105px;
+      height: 95px;
       overflow: hidden;
    }
    .more {
       display: block;
    }
-   .ending-font {
-      font-size: 10px;
-      margin-top: -55px;
-   }
+  
    .title-1{
-      font-size: 10px;
+      font-size: 15px;
+   }
+   #show-more{
+      font-size: 15px;
+       margin-left:50px;
+      
    }
   
 }
@@ -514,6 +515,11 @@ body {
    .ending-font {
       font-size: 20px;
       margin-top: -65px;
+   }
+   #show-more{
+      font-size: 30px;
+       margin-left:100px;
+        margin-top:3px;
    }
   
 }
