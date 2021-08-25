@@ -26,10 +26,12 @@ body {
 .form-style {
    width: 700px;
    background-color: #F0F0F0;
+   border: none;
 }
 
 .button-style {
-   color: rgb(76, 76, 82);
+   color: rgb(164, 164, 165);
+   background-color: rgb(238, 235, 235);
 }
 
 .button-syle:hover {
@@ -37,11 +39,15 @@ body {
 }
 
 .link-style {
-   color: rgb(76, 76, 82);
+   color: rgb(169, 169, 172);
    text-decoration: none;
-   font-size: 20px;
+   font-size: 17px;
 }
-
+.count{
+   height:16px;
+   width: 16px;
+   font-size: 10px;
+}
 .ul-style {
    list-style-type: none;
 }
@@ -157,6 +163,7 @@ body {
 .life {
    font-family: 'Poppins', sans-serif;
    font-size: 400%;
+   color: white;
 }
 
 .appliance {
@@ -232,6 +239,10 @@ body {
 
 .service-desc:hover {
    transform: scale(1.2);
+}
+.nav-image{
+   width: 200px;
+   margin-left: 20px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -376,6 +387,8 @@ body {
    }
    .nav-image {
       padding-left: 20px;
+      margin-left: 100px;
+    
    }
    .nav-style {
       display: table-row;
@@ -384,8 +397,21 @@ body {
       margin-top: 20px;
       width: 300px;
    }
+   .form-control{
+      margin-left:60px;
+   }
    .button-style {
       margin-top: 20px;
+   }
+   .title-1{
+      margin-left: 30px;
+   }
+   #side-bar {
+      height: 97px;
+      overflow: hidden;
+   }
+   .more {
+      display: block;
    }
    .login-cart {
       margin-top: 20px;
@@ -396,11 +422,17 @@ body {
       padding-left: 0px;
    }
    .feature-image {
-      width: 360px;
+      width: 285px;
       height: 250px;
       margin-left: auto;
       margin-right: auto;
       margin-top: 15px;
+   }
+   .safe{
+      width:200px;
+   }
+   .deal {
+      width: 150px;
    }
    .flash-header {
       background-image: url("image/background-1.png");
@@ -423,15 +455,15 @@ body {
       height: 80px;
    }
    .flash {
-      font-size: 250%;
+      font-size: 200%;
       transform: translate(-10%, 2%);
    }
    .life {
-      font-size: 230%;
+      font-size: 200%;
       transform: translate(-10%, 2%);
    }
    .appliance {
-      font-size: 240%;
+      font-size: 200%;
       transform: translate(-10%, 2%);
    }
    .appliance-image {
@@ -460,11 +492,11 @@ body {
       height: 150px;
    }
    .accessories {
-      font-size: 220%;
-      transform: translate(-10%, 2%);
+      font-size: 200%;
+      transform: translate(-20%, 2%);
    }
    .accessories-header {
-      height: 85px;
+      height: 75px;
    }
    .ending {
       width: 110%;
@@ -472,7 +504,7 @@ body {
    }
    .ending-font {
       font-size: 20px;
-      margin-top: -40px;
+      margin-top: -65px;
    }
   
 }

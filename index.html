@@ -17,29 +17,30 @@
 
 <body class="background" onload="reload()">
 
-    <header class="bg-white my-2 ">
+    <header class="bg-white my-2">
 
         <nav class="">
             <div class="row shadow d-flex justify-content-evenly align-items-center py-3 nav-style">
 
                 <div class="col-md-3">
-                    <img class="nav-image" style="width: 200px; margin-left: 20px;" src="image/logo.png" alt="">
+                    <img class="nav-image" style="" src="image/logo.png" alt="">
                 </div>
 
-                <div class=" col-md-6 d-flex justify-content-center align-items-center">
+                <div class=" col-md-6 d-flex  align-items-center">
 
-                    <input class="form-control form-style" type="text" placeholder="Search your products here">
-                    <button class="btn button-style">
+                    <input class="form-control form-style" id="search" onblur="searchItem()" type="text"
+                        placeholder="Search your products here">
+                    <button class="btn button-style ">
                         <i class="fas fa-search"></i>
                     </button>
 
                 </div>
 
                 <div class="col-md-3 d-flex justify-content-center align-items-center login-cart">
-                    <a href="" class="link-style pe-3"><i class="fas fa-shopping-cart px-2"></i>
-                        Cart</a>
-
-                    <a href="" class="link-style ps-2"><i class="fas fa-user-alt px-2"></i>
+                    <a href="" class="link-style pl-3"><i class="fas fa-shopping-cart "></i></a>
+                    <span class="badge bg-danger rounded-pill count text-center mb-3">3</span>
+                    <a href="#" class="link-style pe-4">Cart</a>
+                    <a href="" class="link-style"><i class="fas fa-user-alt"></i>
                         Login/Sign Up</a>
                 </div>
             </div>
@@ -55,7 +56,7 @@
     <!-- First Section with sidebar -->
 
 
-    <main class="mx-5">
+    <main class="mx-5" onerror="error()">
         <section class=" justify-between m-4">
 
             <div class="row  mx-3 ">
@@ -105,7 +106,8 @@
                         </div>
 
                         <div class="col mx-3 rounded bg-white text-center ending">
-                            <h4 class="ending-font" id="promo">Ending Soon + Lost Visited Products</h4>
+                            <h4 class="ending-font" id="promo" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">
+                                Ending Soon + Lost Visited Products</h4>
                         </div>
                     </div>
                 </div>
@@ -220,7 +222,8 @@
             <div class="  flash-header ">
                 <div class="d-flex rounded justify-content-between col-md-12 row">
                     <img class="phone-image col-3 col-md-3 " src="image/phone.png" alt="">
-                    <h1 class="fw-bolder price flash mt-3 col-6 col-md-6 text-center">Flash Sale!</h1>
+                    <h1 class="fw-bolder price flash mt-3 col-6 col-md-6 text-center" id="flash-hover"
+                        onmouseenter="flashEnter()" onmouseleave="flashLeave()">Flash Sale!</h1>
                     <a class="btn btn-light view-button shadow col-3 col-md-3" href="#"><b>VIEW ALL</b></a>
                 </div>
             </div>
@@ -242,48 +245,30 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center p-1 rounded">
-                        <span class="cart-button" id="add">ADD TO CART</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-md-2 shadow rounded bg-white cart-design">
-
-                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                        class="rounded text-white bg-primary">-33%</span>
-                </p>
-
-                <div class="d-flex justify-content-between mb-3">
-                    <div>
-                        <h5 class="price  font-bold price-size">$2000 </h5>
-                    </div>
-
-                    <a href="#" class="add-cart text-white text-center p-1 rounded">
-                        <span class="cart-button">ADD TO CART</span>
-                    </a>
-
-                </div>
-
-            </div>
-            <div class="col-md-2 shadow rounded bg-white cart-design">
-
-                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
-                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
-                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
-                        class="rounded text-white bg-primary">-33%</span>
-                </p>
-
-                <div class="d-flex justify-content-between mb-3">
-                    <div>
-                        <h5 class="price  font-bold price-size">$2000 </h5>
-                    </div>
-                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                    <a href="#" class="add-cart text-white text-center p-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
+            </div>
+
+            <div class="col-md-2 shadow rounded bg-white cart-design">
+
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
+
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+
+                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                        <span class="cart-button" onclick="addCart(this)">ADD TO CART</span>
+                    </a>
+
+                </div>
 
             </div>
             <div class="col-md-2 shadow rounded bg-white cart-design">
@@ -298,7 +283,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                    <a href="#" class="add-cart text-white text-center p-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -316,7 +301,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
+                    <a href="#" class="add-cart text-white text-center p-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -334,7 +319,25 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
+                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded" onclick="addCart(this)">
+                        <span class="cart-button">ADD TO CART</span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-2 shadow rounded bg-white cart-design">
+
+                <img class="headphone-image mt-2 border background rounded" src="image/headphone.png" alt="">
+                <p class="bg-white mt-3">Lorem ipsum, dolor sit amet consectetur it.</p>
+                <p> <span class="line-through text-color text-decoration-line-through">$3200</span> <span
+                        class="rounded text-white bg-primary">-33%</span>
+                </p>
+
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <h5 class="price  font-bold price-size">$2000 </h5>
+                    </div>
+                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -354,7 +357,8 @@
             <div class="  life-header ">
                 <div class="d-flex rounded justify-content-between col-md-12 row">
                     <img class="phone-image col-3 col-md-3 " src="image/watch.png" alt="">
-                    <h1 class="fw-bolder text-light life mt-3 col-6 col-md-6 text-center">LIFE STYLE</h1>
+                    <h1 class="fw-bolder life mt-3 col-6 col-md-6 text-center" onmouseenter="bigHeader(this)"
+                        onmouseleave="normalHeader(this)">LIFE STYLE</h1>
                     <a class="btn btn-light view-button shadow col-3 col-md-3" href="#"><b>VIEW ALL</b></a>
                 </div>
             </div>
@@ -377,7 +381,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                    <a href="#" class="add-cart text-white text-center p-1 rounded" onclick="addCart(this)">
                         <span class="cart-button ">ADD TO CART</span>
                     </a>
                 </div>
@@ -396,7 +400,7 @@
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
 
-                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                    <a href="#" class="add-cart text-white text-center p-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
 
@@ -415,7 +419,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                    <a href="#" class="add-cart text-white text-center p-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -433,7 +437,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                    <a href="#" class="add-cart text-white text-center p-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -451,7 +455,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
+                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -469,7 +473,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
+                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -510,7 +514,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                    <a href="#" class="add-cart text-white text-center p-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -529,7 +533,7 @@
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
 
-                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                    <a href="#" class="add-cart text-white text-center p-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
 
@@ -548,7 +552,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                    <a href="#" class="add-cart text-white text-center p-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -566,7 +570,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                    <a href="#" class="add-cart text-white text-center p-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -584,7 +588,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
+                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -602,7 +606,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
+                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -645,7 +649,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                    <a href="#" class="add-cart text-white text-center p-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -664,7 +668,7 @@
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
 
-                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                    <a href="#" class="add-cart text-white text-center p-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
 
@@ -683,7 +687,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                    <a href="#" class="add-cart text-white text-center p-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -701,7 +705,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center p-1 rounded">
+                    <a href="#" class="add-cart text-white text-center p-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -719,7 +723,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
+                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -737,7 +741,7 @@
                     <div>
                         <h5 class="price  font-bold price-size">$2000 </h5>
                     </div>
-                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded">
+                    <a href="#" class="add-cart text-white text-center px-1 py-1 rounded" onclick="addCart(this)">
                         <span class="cart-button">ADD TO CART</span>
                     </a>
                 </div>
@@ -755,6 +759,9 @@
 
     </footer>
 </body>
+
+
+<!-- Javascript code -->
 
 <script>
     document.getElementById('show-more').addEventListener('click', function () {
@@ -776,11 +783,40 @@
     document.getElementById("promo").onmouseleave = function () { mouseLeave() };
 
     function mouseEnter() {
-        document.getElementById("promo").style.color = "lightBlue";
+        document.getElementById("promo").style.color = "Blue";
     }
 
     function mouseLeave() {
         document.getElementById("promo").style.color = "black";
+    }
+
+    function error() {
+        alert('The image could not be loaded.');
+    }
+
+    function addCart(x) {
+        x.style.background = "orange";
+    }
+
+    function flashEnter() {
+        document.getElementById("flash-hover").style.color = "white";
+    }
+
+    function flashLeave() {
+        document.getElementById("flash-hover").style.color = "orangered";
+    }
+
+    function bigHeader(x) {
+        x.style.color = "cyan";
+    }
+
+    function normalHeader(x) {
+        x.style.color = "white";
+    }
+
+    function searchItem() {
+        var x = document.getElementById("search");
+        x.value = x.value.toUpperCase();
     }
 </script>
 
