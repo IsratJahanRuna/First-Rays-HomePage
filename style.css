@@ -284,12 +284,13 @@ body {
       height: 200px;
    }
    .ending {
-      width: 90%;
-      height: 40px;
+      width: 80%;
+      height: 30px;
    }
    .ending-font {
       font-size: 17px;
-      margin-top: -50px;
+      margin-top: -60px;
+      transform: translateY(-20%);
    }
    .flash-header {
       background-image: url("image/background-1.png");
@@ -298,7 +299,7 @@ body {
    }
    .flash {
       font-size: 150%;
-      transform: translate(-60%, 15%);
+      transform: translate(-50%, 15%);
    }
    .life {
       font-size: 150%;
@@ -338,7 +339,7 @@ body {
       color: rgb(109, 107, 107);
       transform: translate(-35%, 10%);
       font-family: 'Roboto', sans-serif;
-      font-size: 40%;
+      font-size: 35%;
    }
    .phone-image {
       transform: translate(1%, -20%);
@@ -367,17 +368,17 @@ body {
       width: 200px;
    }
    .safe {
-      width: 190px;
+      width: 180px;
    }
    #side-bar {
-      height: 97px;
+      height: 105px;
       overflow: hidden;
    }
    .more {
       display: block;
    }
    .title-1{
-      font-size: 20px;
+      font-size: 15px;
    }
   
 }
@@ -433,7 +434,7 @@ body {
       margin-top: 15px;
    }
    .safe{
-      width:190px;
+      width:200px;
    }
    .deal {
       width: 150px;
@@ -503,9 +504,8 @@ body {
       height: 75px;
    }
    .ending {
-      width: 100%;
-      height: 50px;
-      transform: translateX(-20%);
+      width: 110%;
+      height: 70px;
    }
    .ending-font {
       font-size: 20px;
