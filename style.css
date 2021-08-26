@@ -249,7 +249,6 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-   
    nav {
       display: table-row;
    }
@@ -258,17 +257,17 @@ body {
    }
    .nav-image {
       padding-left: 50px;
-      margin-left: 60px;
+      margin-left: 40px;
    }
    .nav-style {
       display: table-row;
    }
    .form-style {
       margin-top: 20px;
-      width: 240px;
+      width: 270px;
    }
-   .form-control{
-      margin-left:30px;
+   .form-control {
+      margin-left: 40px;
    }
    .button-style {
       margin-top: 20px;
@@ -281,47 +280,42 @@ body {
    .link-style {
       padding-left: 0px;
    }
-
-   .feature-image-1{
-      margin-top: 20px;
-   }
    .feature-image {
-      
-      width: 270px;
-      height: 160px;
+      padding: 10px;
+      width: 100%;
       margin-top: 15px;
+      height: 200px;
    }
-
+   .ending {
+      width: 55%;
+      height: 40px;
+      transform: translateX(-1%);
+   }
    .ending-font {
       font-size: 15px;
       text-align: center;
+      margin-top: -65px;
    }
-
    .flash-header {
       background-image: url("image/background-1.png");
       background-repeat: no-repeat;
       height: 70px;
    }
    .flash {
-      font-size: 22px;
-      text-align: center;
-      padding-right: 40px;
+      font-size: 150%;
+      transform: translate(-10%, 10%);
    }
    .life {
-      font-size: 22px;
-      text-align: center;
-      padding-right: 40px;
-      
+      font-size: 150%;
+      transform: translate(-10%, 5%);
    }
    .appliance {
-      font-size: 22px;
-      text-align: center;
-      padding-right: 40px;
+      font-size: 150%;
+      transform: translate(-10%, 5%);
    }
    .accessories {
-      font-size: 22px;
-      text-align: center;
-      padding-right: 40px;
+      font-size: 150%;
+      transform: translate(-10%, 10%);
    }
    .accessories-header {
       height: 65px;
@@ -342,25 +336,18 @@ body {
       height: 95px;
    }
    .view-button {
-      height: 27px;
+      height: 25px;
       width: 18%;
-      padding-bottom: 2.2%;
       margin-top: 5%;
-      color: rgb(0, 0, 0);
+      color: rgb(109, 107, 107);
+      /* transform: translate(-35%, 10%); */
       font-family: 'Roboto', sans-serif;
-      font-size:8px;
-      text-align: center;
-      
+      font-size: 40%;
    }
    .phone-image {
-      margin-top: 20px;
+      transform: translate(1%, -20%);
       width: 100px;
-      height: 50px;
-   }
-   .appliance-image{
-      margin-top: 20px;
-      width: 100px;
-      height: 50px;
+      height: 80px;
    }
    .cart-design {
       width: 44%;
@@ -373,7 +360,6 @@ body {
       width: 100%;
       height: 150px;
    }
-
    .cart-button {
       font-size: 50%;
    }
@@ -382,30 +368,27 @@ body {
       margin-top: 6px;
    }
    .deal {
-      width: 200px;
-   }
-   .safe {
       width: 150px;
    }
+   .safe {
+      width: 120px;
+   }
    #side-bar {
-      height: 90px;
+      height: 80px;
       overflow: hidden;
    }
    .more {
       display: block;
    }
-  
-   .title-1{
+   .title-1 {
       font-size: 13px;
    }
-   #show-more{
-      font-size: 13px;
-      margin-left:10px;
-      
-      
+   #show-more {
+      font-size: 20px;
+      margin-left: 70px;
    }
-  
 }
+
 @media screen and (min-width: 481px) and (max-width: 668px) {
    nav {
       display: table-row;
