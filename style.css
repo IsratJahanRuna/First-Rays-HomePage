@@ -303,7 +303,7 @@ body {
    }
    .flash {
       font-size: 150%;
-      transform: translate(-30%, 10%);
+      transform: translate(-10%, 10%);
    }
    .life {
       font-size: 150%;
