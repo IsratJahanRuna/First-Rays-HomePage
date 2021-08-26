@@ -303,19 +303,19 @@ body {
    }
    .flash {
       font-size: 150%;
-      transform: translate(-10%, 10%);
+      transform: translate(-20%, 10%);
    }
    .life {
       font-size: 150%;
-      transform: translate(-10%, 5%);
+      transform: translate(-15%, 5%);
    }
    .appliance {
       font-size: 150%;
-      transform: translate(-10%, 5%);
+      transform: translate(-15%, 5%);
    }
    .accessories {
       font-size: 150%;
-      transform: translate(-10%, 10%);
+      transform: translate(-15%, 10%);
    }
    .accessories-header {
       height: 65px;
