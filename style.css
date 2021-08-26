@@ -303,7 +303,7 @@ body {
    }
    .flash {
       font-size: 150%;
-      transform: translate(-10%, 10%);
+      transform: translate(-20%, 10%);
    }
    .life {
       font-size: 150%;
@@ -381,7 +381,7 @@ body {
       display: block;
    }
    .title-1 {
-      font-size: 13px;
+      font-size: 11px;
    }
    #show-more {
       font-size: 20px;
